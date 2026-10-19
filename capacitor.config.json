@@ -1,0 +1,7 @@
+{
+  "appId": "com.tuttifrutti.game",
+  "appName": "Tutti & Frutti",
+  "webDir": "www",
+  "backgroundColor": "#1e2235",
+  "android": { "allowMixedContent": false }
+}
