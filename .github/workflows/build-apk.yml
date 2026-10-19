@@ -36,6 +36,7 @@ jobs:
             mkdir -p assets && cp icon.png assets/icon-only.png
             if [ -f icon-fg.png ]; then cp icon-fg.png assets/icon-foreground.png; else cp icon.png assets/icon-foreground.png; fi
             npx capacitor-assets generate --android --iconBackgroundColor '#5a2e23' || true
+                        rm -rf android/app/src/main/res/mipmap-anydpi-v26
           fi
       - name: Sync
         run: npx cap sync android
