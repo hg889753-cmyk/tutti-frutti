@@ -30,7 +30,7 @@ jobs:
           sed -i 's|android:name=".MainActivity"|android:name=".MainActivity" android:screenOrientation="sensorLandscape"|' $M
           S=android/app/src/main/res/values/styles.xml
           sed -i 's|</style>|<item name="android:windowFullscreen">true</item></style>|g' $S
-      - name: Icon (optional: icon.png 1024x1024, and icon-fg.png transparent)
+      - name: Icon (optional)
         run: |
           if [ -f icon.png ]; then
             mkdir -p assets && cp icon.png assets/icon-only.png
